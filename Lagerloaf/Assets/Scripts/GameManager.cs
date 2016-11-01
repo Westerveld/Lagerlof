@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[] platformPrefabs;
     public GameObject collapsingWall;
+    public GameObject knife;
     public static float gameSpeed = 1;
     int platformHeight = 10;
     int level = 0;
@@ -20,7 +21,7 @@ public class GameManager : MonoBehaviour {
     void Update () {
      //   UpdateCameraPosition();
         
-        if (Camera.main.transform.position.y >= level*platformHeight)
+        if (Camera.main.transform.position.y >= (level*platformHeight) - 2)//offset because of camera change 
         {
             level++;
             gameSpeed += 0.01f;
@@ -34,6 +35,7 @@ public class GameManager : MonoBehaviour {
    void SpawnNewLevel()
     {
         Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length-1)], new Vector3(0, platformHeight * level, 0), Quaternion.identity);
+        Instantiate(knife, new Vector3(0, platformHeight * level, 0), Quaternion.identity);
     }
 
     void closeWall()
@@ -58,5 +60,6 @@ public class GameManager : MonoBehaviour {
                 Destroy(go);
             }
         }
+   
     }
 }
