@@ -1,16 +1,17 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum Items
+{
+    Butter,
+    Lager,
+    Count,
+    None
+}
+
 public class PickupController : MonoBehaviour
 {
-    public enum Pickups
-    {
-        Butter,
-        Lager,
-        Count
-    }
-
-    Pickups pickup;
+    Items pickup;
 
     public string texturesPath;
 
@@ -18,7 +19,7 @@ public class PickupController : MonoBehaviour
     {
         set
         {
-            pickup = (Pickups)Pickups.Parse(typeof(Pickups), value);
+            pickup = (Items)Items.Parse(typeof(Items), value);
         }
 
         get
@@ -29,7 +30,7 @@ public class PickupController : MonoBehaviour
     
 	void Start ()
     {
-        pickup = (Pickups)Random.Range(0, (float)Pickups.Count);
+        pickup = (Items)Random.Range(0, (float)Items.Count);
         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(texturesPath + "/" + Type);
 	}
 
@@ -37,7 +38,7 @@ public class PickupController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            //collision.gameObject.GetComponent<PlayerController>().Item = pickup;
+            collision.gameObject.GetComponent<PlayerController>().item = pickup;
             Destroy(gameObject);
         }
     }

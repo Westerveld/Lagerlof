@@ -12,12 +12,19 @@ public class PlayerController : MonoBehaviour
     public Animator anim;
 
     public bool slowed;
+
+    public GameObject ParticleEffect;
+
+    public GameObject trapPrefab;
+    public Items item = Items.None;
+
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         jumping = true;
         anim.SetBool("InAir", true);
         slowed = false;
+        ParticleEffect.SetActive(false);
     }
 
     void Update()
@@ -52,7 +59,7 @@ public class PlayerController : MonoBehaviour
         {
             if (slowed)
             {
-                transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed * Time.deltaTime)/2;
+                transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed / 2 * Time.deltaTime);
                 anim.SetBool("Walking", true);
                 ChangeScale(1);
             }
@@ -68,7 +75,7 @@ public class PlayerController : MonoBehaviour
         {
             if (slowed)
             {
-                transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed * Time.deltaTime)/2;
+                transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed / 2 * Time.deltaTime);
                 anim.SetBool("Walking", true);
                 ChangeScale(-1);
             }
@@ -98,13 +105,19 @@ public class PlayerController : MonoBehaviour
 
     void UseItem()
     {
-        if(Input.GetButtonDown(controller + "Use"))
+        if(Input.GetButtonDown(controller + "Use") && item != Items.None)
         {
             anim.SetTrigger("UsedItem");
+
+            GameObject trap = (GameObject)Instantiate(trapPrefab);
+            trap.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Pickups/" + item.ToString());
+            trap.transform.position = transform.position + transform.right * -2;
+
+            item = Items.None;
         }
     }
 
-    public void IsSlowed()
+    public void SetSlow()
     {
         slowed = true;
         StartCoroutine(SlowHim());
@@ -118,7 +131,8 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
-        Destroy(gameObject);
+        ParticleEffect.SetActive(true);
+        Destroy(gameObject, 1f);
         Debug.Log("Player - " + this.gameObject.name + " DEAD");
     }
 
