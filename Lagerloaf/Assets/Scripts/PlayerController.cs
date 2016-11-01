@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
         Move();
         Jump();
         UseItem();
+        CheckIfFallenOffMap();
+        WrapeMovement();
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -113,4 +115,32 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(slowTime);
         slowed = false;
     }
+
+    public void Death()
+    {
+        Destroy(gameObject);
+        Debug.Log("Player - " + this.gameObject.name + " DEAD");
+    }
+
+    void CheckIfFallenOffMap()
+    {
+        if (gameObject.transform.position.y < Camera.main.transform.position.y - 30)
+        {
+            Death();
+        }
+    }
+
+
+    void WrapeMovement()
+    {
+        if (transform.position.x > 20 || transform.position.x < -20)
+        {
+            transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
+        }
+    }
+
+
+
+   
+
 }
