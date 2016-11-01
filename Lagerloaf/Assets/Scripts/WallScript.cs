@@ -31,7 +31,7 @@ public class WallScript : MonoBehaviour
     {
         Vector2 pos = trans.position;
         //  if (startTime + collapseTime < Time.time)
-        if (gameObject.transform.position.y + 1 < Camera.main.transform.position.y)
+        if (gameObject.transform.position.y + 3 < Camera.main.transform.position.y)
         {
             if (moveLeft && pos.x > 11f)
             {

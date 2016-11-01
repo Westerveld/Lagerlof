@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 4000012529680578}
   - 114: {fileID: 114000011640348154}
+  - 114: {fileID: 114000013143606656}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -53,5 +54,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefabs:
   - {fileID: 1000011682632192, guid: a2bbb4fdfbd78bf4089ecff24b7efe7f, type: 2}
-  - {fileID: 1000013161696384, guid: b90d8d06868111746b53767a57d51f10, type: 2}
-  - {fileID: 1000011275034672, guid: 8ac26f4efac686848b7f5e41c8826b04, type: 2}
+  collapsingWall: {fileID: 1000013009199450, guid: c83d9584507ebe547b50ce32af8ad6d2,
+    type: 2}
+  knifes: {fileID: 1000010469595248, guid: abfc8dd02f7014e48902cd518b976ba3, type: 2}
+  Players:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &114000013143606656
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010380902690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cbc29b6924ae36429ba255752f5a7a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 6f2199b301b868c47876548b98aeece9, type: 3}
+  fadeSpeed: 0.5
+  alpha: 1

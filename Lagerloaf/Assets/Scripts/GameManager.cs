@@ -6,6 +6,7 @@ public class GameManager : MonoBehaviour {
 
     public GameObject[] platformPrefabs;
     public GameObject collapsingWall;
+    public GameObject knifes;
     public static float gameSpeed = 1;
     int platformHeight = 10;
     int level = 0;
@@ -21,6 +22,8 @@ public class GameManager : MonoBehaviour {
         {
             Players[i].SetActive(true);
         }
+
+        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length - 1)], new Vector3(0, platformHeight * level, 0), Quaternion.identity);
 
     }
 
@@ -39,7 +42,9 @@ public class GameManager : MonoBehaviour {
 
    void SpawnNewLevel()
     {
-        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length-1)], new Vector3(0, platformHeight * level, 0), Quaternion.identity);
+        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length-1)], new Vector3(0, platformHeight * level + 5, 0), Quaternion.identity);
+        Instantiate(knifes, new Vector3(0, platformHeight * level  +5, 0), Quaternion.identity);
+
     }
 
 
