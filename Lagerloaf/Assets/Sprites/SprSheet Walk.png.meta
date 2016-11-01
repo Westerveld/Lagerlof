@@ -1,0 +1,619 @@
+fileFormatVersion: 2
+guid: 3c70e0e21a7e44241aaabc9d029f904b
+timeCreated: 1477996895
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SprSheet Walk_0
+    21300002: SprSheet Walk_1
+    21300004: SprSheet Walk_2
+    21300006: SprSheet Walk_3
+    21300008: SprSheet Walk_4
+    21300010: SprSheet Walk_5
+    21300012: SprSheet Walk_6
+    21300014: SprSheet Walk_7
+    21300016: SprSheet Walk_8
+    21300018: SprSheet Walk_9
+    21300020: SprSheet Walk_10
+    21300022: SprSheet Walk_11
+    21300024: SprSheet Walk_12
+    21300026: SprSheet Walk_13
+    21300028: SprSheet Walk_14
+    21300030: SprSheet Walk_15
+    21300032: SprSheet Walk_16
+    21300034: SprSheet Walk_17
+    21300036: SprSheet Walk_18
+    21300038: SprSheet Walk_19
+    21300040: SprSheet Walk_20
+    21300042: SprSheet Walk_21
+    21300044: SprSheet Walk_22
+    21300046: SprSheet Walk_23
+    21300048: SprSheet Walk_24
+    21300050: SprSheet Walk_25
+    21300052: SprSheet Walk_26
+    21300054: SprSheet Walk_27
+    21300056: SprSheet Walk_28
+    21300058: SprSheet Walk_29
+    21300060: SprSheet Walk_30
+    21300062: SprSheet Walk_31
+    21300064: SprSheet Walk_32
+    21300066: SprSheet Walk_33
+    21300068: SprSheet Walk_34
+    21300070: SprSheet Walk_35
+    21300072: SprSheet Walk_36
+    21300074: SprSheet Walk_37
+    21300076: SprSheet Walk_38
+    21300078: SprSheet Walk_39
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SprSheet Walk_0
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1792
+        width: 120
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_1
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 1792
+        width: 120
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_2
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1793
+        width: 120
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1792
+        width: 120
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_4
+      rect:
+        serializedVersion: 2
+        x: 653
+        y: 1792
+        width: 120
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_5
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 1791
+        width: 119
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_6
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1791
+        width: 119
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_7
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 1790
+        width: 119
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_8
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 1790
+        width: 119
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_9
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1790
+        width: 119
+        height: 250
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_10
+      rect:
+        serializedVersion: 2
+        x: 1474
+        y: 1791
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_11
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1792
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_12
+      rect:
+        serializedVersion: 2
+        x: 1738
+        y: 1791
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_13
+      rect:
+        serializedVersion: 2
+        x: 1868
+        y: 1792
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_14
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 1523
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_15
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1518
+        width: 146
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_16
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 1518
+        width: 146
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_17
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 1518
+        width: 146
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_18
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 1518
+        width: 146
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_19
+      rect:
+        serializedVersion: 2
+        x: 970
+        y: 1522
+        width: 146
+        height: 243
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_20
+      rect:
+        serializedVersion: 2
+        x: 1167
+        y: 1521
+        width: 162
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_21
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 1520
+        width: 162
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_22
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1517
+        width: 162
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_23
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 1519
+        width: 162
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_24
+      rect:
+        serializedVersion: 2
+        x: 1863
+        y: 1516
+        width: 162
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_25
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1255
+        width: 131
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_26
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1255
+        width: 131
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_27
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1254
+        width: 131
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_28
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1254
+        width: 131
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_29
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 1253
+        width: 131
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_30
+      rect:
+        serializedVersion: 2
+        x: 884
+        y: 1255
+        width: 125
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_31
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 1261
+        width: 125
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_32
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 1259
+        width: 125
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_33
+      rect:
+        serializedVersion: 2
+        x: 1342
+        y: 1261
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_34
+      rect:
+        serializedVersion: 2
+        x: 1486
+        y: 1259
+        width: 119
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_35
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1260
+        width: 119
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_36
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 1259
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_37
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 1262
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_38
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 979
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Walk_39
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 980
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

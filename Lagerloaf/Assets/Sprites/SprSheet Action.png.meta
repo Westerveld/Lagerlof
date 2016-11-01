@@ -1,0 +1,269 @@
+fileFormatVersion: 2
+guid: f67765e46b641c842bf80eb79f6ecab4
+timeCreated: 1477996829
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SprSheet Action_0
+    21300002: SprSheet Action_1
+    21300004: SprSheet Action_2
+    21300006: SprSheet Action_3
+    21300008: SprSheet Action_4
+    21300010: SprSheet Action_5
+    21300012: SprSheet Action_6
+    21300014: SprSheet Action_7
+    21300016: SprSheet Action_8
+    21300018: SprSheet Action_9
+    21300020: SprSheet Action_10
+    21300022: SprSheet Action_11
+    21300024: SprSheet Action_12
+    21300026: SprSheet Action_13
+    21300028: SprSheet Action_14
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SprSheet Action_0
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 452
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_1
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 452
+        width: 119
+        height: 246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_2
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 452
+        width: 136
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_3
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 453
+        width: 152
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_4
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 453
+        width: 152
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_5
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 453
+        width: 152
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_6
+      rect:
+        serializedVersion: 2
+        x: 1149
+        y: 453
+        width: 152
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_7
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 453
+        width: 152
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_8
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 453
+        width: 174
+        height: 247
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_9
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 448
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_10
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 164
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_11
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 157
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_12
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 152
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_13
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 162
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet Action_14
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 158
+        width: 196
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
