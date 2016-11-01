@@ -20,31 +20,32 @@ public class WallScript : MonoBehaviour {
             pos.x = -18f;
             trans.position = pos;
         }
-        startTime = Time.time;
+       // startTime += Time.time ;
 	}
 	
 	// Update is called once per frame
 	void Update () {
         Vector2 pos = trans.position;
-        if (startTime + collapseTime < Time.time)
+        //  if (startTime + collapseTime < Time.time)
+       if (gameObject.transform.position.y+1 < Camera.main.transform.position.y)
         {
-            if (moveLeft && pos.x > 12f)
+            if (moveLeft && pos.x > 11f)
             {
                 pos.x -= 0.1f;
                 trans.position = pos;
             }
-            else if(!moveLeft && pos.x < -12f)
+            else if(!moveLeft && pos.x < -11f)
             {
                 pos.x += 0.1f;
                 trans.position = pos;
             }
             else
             {
-                if (moveLeft && pos.x > 9f)
+                if (moveLeft && pos.x > 8f)
                 {
                     pos.x -= 0.5f;
                     trans.position = pos;
-                }else if (!moveLeft && pos.x < -9f)
+                }else if (!moveLeft && pos.x < -8f)
                 {
                     pos.x += 0.5f;
                     trans.position = pos;
