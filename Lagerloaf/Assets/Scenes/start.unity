@@ -227,6 +227,7 @@ GameObject:
   - 222: {fileID: 1231099185}
   - 114: {fileID: 1231099184}
   - 114: {fileID: 1231099183}
+  - 95: {fileID: 1231099186}
   m_Layer: 5
   m_Name: NumberOfPlayersMinus
   m_TagString: Untagged
@@ -243,13 +244,13 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 10, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_Children: []
   m_Father: {fileID: 1227864268}
   m_RootOrder: 2
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -100, y: -280}
+  m_AnchoredPosition: {x: -1000, y: -280}
   m_SizeDelta: {x: 10, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1231099183
@@ -337,6 +338,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1231099181}
+--- !u!95 &1231099186
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1231099181}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 380e175219c76664380576e9ea6892a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1258292037
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,6 +440,7 @@ GameObject:
   - 222: {fileID: 1547144522}
   - 114: {fileID: 1547144521}
   - 114: {fileID: 1547144520}
+  - 95: {fileID: 1547144523}
   m_Layer: 5
   m_Name: NumberOfPlayersPlus
   m_TagString: Untagged
@@ -435,10 +454,10 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1547144518}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: -0, z: 0.9961947, w: -0.08715578}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 10, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 270}
   m_Children: []
   m_Father: {fileID: 1227864268}
   m_RootOrder: 3
@@ -532,6 +551,23 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1547144518}
+--- !u!95 &1547144523
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1547144518}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c93ad3203f1ab44cb26493acc1cc3e8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &1589171110
 GameObject:
   m_ObjectHideFlags: 0

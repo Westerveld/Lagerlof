@@ -9,17 +9,23 @@ public class GameManager : MonoBehaviour {
     public static float gameSpeed = 1;
     int platformHeight = 10;
     int level = 0;
-    
-	// Use this for initialization
-	void Start () {
+    float numOfPlayers;
+
+    public GameObject[] Players;
+
+    // Use this for initialization
+    void Start () {
         List<GameObject> spawnedPlatforms = new List<GameObject>();
- 
+        numOfPlayers = gameObject.GetComponent<InputManager>().GetNumberOfPlayers();
+        for(int i = 1; i < numOfPlayers; i++)
+        {
+            Players[i].SetActive(true);
+        }
+
     }
 
     // Update is called once per frame
     void Update () {
-     //   UpdateCameraPosition();
-        
         if (Camera.main.transform.position.y >= level*platformHeight)
         {
             level++;
@@ -36,10 +42,6 @@ public class GameManager : MonoBehaviour {
         Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length-1)], new Vector3(0, platformHeight * level, 0), Quaternion.identity);
     }
 
-    void closeWall()
-    {
-
-    }
 
     void SpawnWalls(Vector2 pos)
     {
@@ -48,7 +50,7 @@ public class GameManager : MonoBehaviour {
         
     }
 
-        void CleanPlatforms()
+    void CleanPlatforms()
     {
 
         foreach (var go in GameObject.FindGameObjectsWithTag("Platform"))
@@ -59,4 +61,6 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
+
+
 }

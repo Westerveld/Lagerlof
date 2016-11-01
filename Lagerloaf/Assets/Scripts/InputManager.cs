@@ -18,4 +18,9 @@ public class InputManager : MonoBehaviour {
     {
         numOfPlayers = value;
     }
+
+    public float GetNumberOfPlayers()
+    {
+        return numOfPlayers;
+    }
 }
