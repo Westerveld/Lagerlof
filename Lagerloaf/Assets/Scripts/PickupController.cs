@@ -3,11 +3,10 @@ using System.Collections;
 
 public class PickupController : MonoBehaviour
 {
-    private enum Pickups
+    public enum Pickups
     {
         Butter,
         Lager,
-        Beer,
         Count
     }
 
@@ -33,4 +32,13 @@ public class PickupController : MonoBehaviour
         pickup = (Pickups)Random.Range(0, (float)Pickups.Count);
         GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(texturesPath + "/" + Type);
 	}
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+     //       collision.gameObject.GetComponent<PlayerController>().Item = pickup;
+            Destroy(gameObject);
+        }
+    }
 }
