@@ -30,7 +30,7 @@ public class StartManager : MonoBehaviour
     {
         float fadeTime = GameObject.Find("GM").GetComponent<MainFader>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
-        gameObject.GetComponent<InputManager>().SetNumberOfPlayers(numOfPlayers);
+        GameObject.Find("InputManager").GetComponent<InputManager>().SetNumberOfPlayers(numOfPlayers);
         SceneManager.LoadScene("Level1");
     }
 

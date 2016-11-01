@@ -16,8 +16,8 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         List<GameObject> spawnedPlatforms = new List<GameObject>();
-        numOfPlayers = gameObject.GetComponent<InputManager>().GetNumberOfPlayers();
-        for(int i = 1; i < numOfPlayers; i++)
+        numOfPlayers = GameObject.Find("InputManager").GetComponent<InputManager>().GetNumberOfPlayers();
+        for(int i = 0; i < numOfPlayers; i++)
         {
             Players[i].SetActive(true);
         }

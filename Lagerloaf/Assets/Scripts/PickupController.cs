@@ -37,7 +37,7 @@ public class PickupController : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerController>().Item = pickup;
+            //collision.gameObject.GetComponent<PlayerController>().Item = pickup;
             Destroy(gameObject);
         }
     }
