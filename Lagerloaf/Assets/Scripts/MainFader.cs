@@ -26,7 +26,7 @@ public class MainFader : MonoBehaviour {
         return (fadeSpeed);
     }
 
-    void OnLevelWasLoaded()
+    void OnEnabled()
     {
         // alpha = 1;
         BeginFade(-1);
