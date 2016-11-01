@@ -3,11 +3,10 @@ using System.Collections;
 
 public class PickupController : MonoBehaviour
 {
-    private enum Pickups
+    public enum Pickups
     {
         Butter,
         Lager,
-        Beer,
         Count
     }
 
