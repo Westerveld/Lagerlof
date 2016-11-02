@@ -4,8 +4,15 @@ using System.Collections;
 public class TrapController : MonoBehaviour
 {
     public Items item;
-
+    public float speed = 4f;
     
+    void Update()
+    {
+        if(item.ToString() == "Lager")
+        {
+            transform.Translate(Vector2.down * speed);
+        }
+    }
     void OnTriggerEnter2D(Collider2D collider)
     {
         if (collider.gameObject.tag == "Player" && item.ToString() == "Butter")
