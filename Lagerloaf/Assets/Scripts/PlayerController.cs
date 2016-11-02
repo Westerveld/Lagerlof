@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rigidBody;
     private bool jumping;
 
-    public float jumpReduction;
+    public float jumpReduction = 2.0f;
 
     public Animator anim;
 
@@ -118,7 +118,7 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                rigidBody.AddForce(Vector2.up * (jumpForce / jumpReduction));
+                rigidBody.AddForce ( new Vector2(0, 1 * jumpForce / jumpReduction));
             }
             jumping = true;
             anim.SetTrigger("Jumping");

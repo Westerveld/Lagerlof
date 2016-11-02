@@ -411,6 +411,9 @@ MonoBehaviour:
   moving: 1
   startTime: 0
   collapseTime: 3
+  startX: 17
+  slowMoveX: 0
+  fastMoveX: 0
   pEffect: {fileID: 1000011586078678}
 --- !u!114 &114000014278447446
 MonoBehaviour:
@@ -427,6 +430,9 @@ MonoBehaviour:
   moving: 1
   startTime: 0
   collapseTime: 3
+  startX: 17
+  slowMoveX: 0
+  fastMoveX: 0
   pEffect: {fileID: 1000011586078678}
 --- !u!198 &198000011641761228
 ParticleSystem:

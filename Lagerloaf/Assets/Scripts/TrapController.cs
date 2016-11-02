@@ -10,7 +10,7 @@ public class TrapController : MonoBehaviour
     {
         if(item.ToString() == "Lager")
         {
-            transform.Translate(Vector2.down * speed);
+            transform.Translate(Vector2.down * (speed * Time.deltaTime));
         }
     }
     void OnTriggerEnter2D(Collider2D collider)
@@ -25,6 +25,12 @@ public class TrapController : MonoBehaviour
             collider.gameObject.GetComponent<PlayerController>().CanCrushed();
             Destroy(gameObject);
         }
+
+        if(collider.gameObject.tag == "Platform" )
+        {
+            gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
+        }
+
     }
 
     public void SetType(Items m_item)
