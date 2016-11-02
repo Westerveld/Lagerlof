@@ -3,15 +3,18 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
-    public float moveSpeed, jumpForce, slowTime;
+    public float moveSpeed, jumpForce;
     public string controller;
 
     private Rigidbody2D rigidBody;
     private bool jumping;
 
+    public float jumpReduction;
+
     public Animator anim;
 
-    public bool slowed;
+    private bool slowed;
+    private bool crushed;
 
     public GameObject ParticleEffect;
 
@@ -109,7 +112,14 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetButtonDown(controller + "Jump") && !jumping)
         {
-            rigidBody.AddForce(Vector2.up * jumpForce);
+            if (!crushed)
+            {
+                rigidBody.AddForce(Vector2.up * jumpForce);
+            }
+            else
+            {
+                rigidBody.AddForce(Vector2.up * (jumpForce / jumpReduction));
+            }
             jumping = true;
             anim.SetTrigger("Jumping");
             anim.SetBool("InAir", true);
@@ -124,6 +134,7 @@ public class PlayerController : MonoBehaviour
 
             GameObject trap = (GameObject)Instantiate(trapPrefab);
             trap.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Pickups/" + item.ToString());
+            trap.GetComponent<TrapController>().SetType(item);
             trap.transform.position = transform.position + transform.right * -2;
 
             item = Items.None;
@@ -138,8 +149,20 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator SlowHim()
     {
-        yield return new WaitForSeconds(slowTime);
+        yield return new WaitForSeconds(2f);
         slowed = false;
+    }
+
+    public void CanCrushed()
+    {
+        crushed = true;
+        StartCoroutine(JumpReduction());
+    }
+
+    IEnumerator JumpReduction()
+    {
+        yield return new WaitForSeconds(2f);
+        crushed = false;
     }
 
     public void Death()
@@ -166,9 +189,5 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
         }
     }
-
-
-
-   
 
 }
