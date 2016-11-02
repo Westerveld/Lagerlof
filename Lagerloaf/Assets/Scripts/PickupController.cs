@@ -21,7 +21,6 @@ public class PickupController : MonoBehaviour
         {
             pickup = (Items)Items.Parse(typeof(Items), value);
         }
-
         get
         {
             return pickup.ToString();

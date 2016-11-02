@@ -45,11 +45,24 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    void ChangeScale(float value)
+    void ChangeScale(bool value)
     {
+        if(value)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        }
+        //Original code
+        /*
         var scale = transform.localScale;
         scale.x = value;
         transform.localScale = scale;
+        */
     }
 
     void Move()
@@ -61,13 +74,13 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed / 2 * Time.deltaTime);
                 anim.SetBool("Walking", true);
-                ChangeScale(1);
+                ChangeScale(false);
             }
             else
             {
                 transform.position = position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed * Time.deltaTime;
                 anim.SetBool("Walking", true);
-                ChangeScale(1);
+                ChangeScale(false);
             }
 
         }
@@ -77,13 +90,13 @@ public class PlayerController : MonoBehaviour
             {
                 transform.position = (position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed / 2 * Time.deltaTime);
                 anim.SetBool("Walking", true);
-                ChangeScale(-1);
+                ChangeScale(true);
             }
             else
             {
                 transform.position = position + Vector2.right * Input.GetAxis(controller + "Horizontal") * moveSpeed * Time.deltaTime;
                 anim.SetBool("Walking", true);
-                ChangeScale(-1);
+                ChangeScale(true);
             }
         }
         else
@@ -131,9 +144,10 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
         ParticleEffect.SetActive(true);
         Destroy(gameObject, 1f);
-        Debug.Log("Player - " + this.gameObject.name + " DEAD");
+        Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
     }
 
     void CheckIfFallenOffMap()
