@@ -1,0 +1,731 @@
+fileFormatVersion: 2
+guid: f7b1de3b3f782014b9843d30d315589a
+timeCreated: 1478128426
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SprSheet idle p3_0
+    21300002: SprSheet idle p3_1
+    21300004: SprSheet idle p3_2
+    21300006: SprSheet idle p3_3
+    21300008: SprSheet idle p3_4
+    21300010: SprSheet idle p3_5
+    21300012: SprSheet idle p3_6
+    21300014: SprSheet idle p3_7
+    21300016: SprSheet idle p3_8
+    21300018: SprSheet idle p3_9
+    21300020: SprSheet idle p3_10
+    21300022: SprSheet idle p3_11
+    21300024: SprSheet idle p3_12
+    21300026: SprSheet idle p3_13
+    21300028: SprSheet idle p3_14
+    21300030: SprSheet idle p3_15
+    21300032: SprSheet idle p3_16
+    21300034: SprSheet idle p3_17
+    21300036: SprSheet idle p3_18
+    21300038: SprSheet idle p3_19
+    21300040: SprSheet idle p3_20
+    21300042: SprSheet idle p3_21
+    21300044: SprSheet idle p3_22
+    21300046: SprSheet idle p3_23
+    21300048: SprSheet idle p3_24
+    21300050: SprSheet idle p3_25
+    21300052: SprSheet idle p3_26
+    21300054: SprSheet idle p3_27
+    21300056: SprSheet idle p3_28
+    21300058: SprSheet idle p3_29
+    21300060: SprSheet idle p3_30
+    21300062: SprSheet idle p3_31
+    21300064: SprSheet idle p3_32
+    21300066: SprSheet idle p3_33
+    21300068: SprSheet idle p3_34
+    21300070: SprSheet idle p3_35
+    21300072: SprSheet idle p3_36
+    21300074: SprSheet idle p3_37
+    21300076: SprSheet idle p3_38
+    21300078: SprSheet idle p3_39
+    21300080: SprSheet idle p3_40
+    21300082: SprSheet idle p3_41
+    21300084: SprSheet idle p3_42
+    21300086: SprSheet idle p3_43
+    21300088: SprSheet idle p3_44
+    21300090: SprSheet idle p3_45
+    21300092: SprSheet idle p3_46
+    21300094: SprSheet idle p3_47
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SprSheet idle p3_0
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1794
+        width: 150
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_1
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1794
+        width: 150
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_2
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1794
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_3
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 1794
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_4
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 1794
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_5
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 1794
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_6
+      rect:
+        serializedVersion: 2
+        x: 1206
+        y: 1794
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_7
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 1794
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_8
+      rect:
+        serializedVersion: 2
+        x: 1603
+        y: 1794
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_9
+      rect:
+        serializedVersion: 2
+        x: 1794
+        y: 1794
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1535
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_11
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 1535
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_12
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 1535
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_13
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_14
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_15
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_16
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_17
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_18
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 1543
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_19
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 1286
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_20
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 1286
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_21
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 1286
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_22
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1286
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_23
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1289
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_24
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 1289
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_25
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 1289
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_26
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 1289
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_27
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 1039
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_28
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 1039
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_29
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 1039
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_30
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 1039
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_31
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1037
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_32
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 1037
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_33
+      rect:
+        serializedVersion: 2
+        x: 1235
+        y: 1037
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_34
+      rect:
+        serializedVersion: 2
+        x: 1426
+        y: 1037
+        width: 150
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_35
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 1037
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_36
+      rect:
+        serializedVersion: 2
+        x: 1821
+        y: 1037
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_37
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 783
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_38
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 787
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_39
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 783
+        width: 150
+        height: 212
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_40
+      rect:
+        serializedVersion: 2
+        x: 622
+        y: 784
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_41
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 784
+        width: 150
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_42
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 790
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_43
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 790
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_44
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 783
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_45
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 783
+        width: 150
+        height: 218
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_46
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 495
+        width: 150
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: SprSheet idle p3_47
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 495
+        width: 150
+        height: 226
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
