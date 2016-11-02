@@ -6,7 +6,7 @@ public class WallScript : MonoBehaviour
 
     public bool moveLeft, moving = true;
     private Transform trans;
-    public float startTime, collapseTime;
+    public float startTime, collapseTime, startX, slowMoveX, fastMoveX;
     public GameObject pEffect;
     // Use this for initialization
     void Start()
@@ -15,12 +15,12 @@ public class WallScript : MonoBehaviour
         var pos = trans.position;
         if (moveLeft)
         {
-            pos.x = 18f;
+            pos.x = startX;
             trans.position = pos;
         }
         else
         {
-            pos.x = -18f;
+            pos.x = -startX;
             trans.position = pos;
         }
         // startTime += Time.time ;
@@ -35,24 +35,24 @@ public class WallScript : MonoBehaviour
         {
             if (moveLeft && pos.x > 11f)
             {
-                pos.x -= 0.1f;
+                pos.x -= slowMoveX;
                 trans.position = pos;
             }
             else if (!moveLeft && pos.x < -11f)
             {
-                pos.x += 0.1f;
+                pos.x += slowMoveX;
                 trans.position = pos;
             }
             else
             {
                 if (moveLeft && pos.x > 8f)
                 {
-                    pos.x -= 0.5f;
+                    pos.x -= fastMoveX;
                     trans.position = pos;
                 }
                 else if (!moveLeft && pos.x < -8f)
                 {
-                    pos.x += 0.5f;
+                    pos.x += fastMoveX;
                     trans.position = pos;
                 }
                 else
@@ -72,6 +72,12 @@ public class WallScript : MonoBehaviour
         {
             other.gameObject.GetComponent<PlayerController>().Death();
         }
+    }
+
+    public void ChangeValues(float newXSlow, float newXFast)
+    {
+        slowMoveX = newXSlow;
+        fastMoveX = newXFast;
     }
 }
     

@@ -5,10 +5,9 @@ using System.Collections.Generic;
 public class GameManager : MonoBehaviour {
 
     public GameObject[] platformPrefabs;
-    public GameObject collapsingWall;
     public GameObject knifes;
     public static float gameSpeed = 1; //Starting speed
-    public static float gameSpeedIncreament = 0.3f; //The rate in which the gamespeed increases, called when a new "level" is added to the game. 
+    public static float gameSpeedIncreament = 0.05f; //The rate in which the gamespeed increases, called when a new "level" is added to the game. 
     int platformHeight = 10;
     int level = 0;
     float numOfPlayers;
@@ -47,27 +46,24 @@ public class GameManager : MonoBehaviour {
    void SpawnNewLevel()
     {
         Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length-1)], new Vector3(0, platformHeight * level + 5, 0), Quaternion.identity);
-     GameObject go = (GameObject)Instantiate(knifes, new Vector3(0, platformHeight * level  +5, 0), Quaternion.identity);
-        WallScript ws = go.GetComponent<WallScript>();
-        if (4.0f - gameSpeed > 0.03)
-        { 
-        ws.collapseTime =  4.0f - gameSpeed;
-        }
-        else
-        {
-        ws.GetComponent<WallScript>().collapseTime = 0.03f;
-        }
-    }
-
-
-    void SpawnWalls(Vector2 pos)
-    {
-     GameObject  go = (GameObject)Instantiate(collapsingWall, new Vector3(pos.x,pos.y,0), Quaternion.identity);     
+        GameObject go = (GameObject)Instantiate(knifes, new Vector3(0, platformHeight * level  +5, 0), Quaternion.identity);
+        WallScript wall1 = go.transform.GetChild(0).gameObject.GetComponent<WallScript>();
+        WallScript wall2 = go.transform.GetChild(1).gameObject.GetComponent<WallScript>();
+        wall1.ChangeValues((gameSpeed *0.1f), (gameSpeed * 0.5f));
+        wall2.ChangeValues((gameSpeed * 0.1f), (gameSpeed * 0.5f));
+        
     }
 
     void CleanPlatforms()
     {
         foreach (var go in GameObject.FindGameObjectsWithTag("Platform"))
+        {
+            if (go.transform.position.y < Camera.main.transform.position.y - platformHeight)
+            {
+                Destroy(go);
+            }
+        }
+        foreach(var go in GameObject.FindGameObjectsWithTag("Edge"))
         {
             if (go.transform.position.y < Camera.main.transform.position.y - platformHeight)
             {
