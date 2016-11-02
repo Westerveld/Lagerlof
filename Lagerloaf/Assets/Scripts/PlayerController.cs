@@ -49,24 +49,15 @@ public class PlayerController : MonoBehaviour
     }
 
     void ChangeScale(bool value)
-    {
-        if(value)
-        {
-            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+	{
+		if (value) {
+			gameObject.GetComponent<SpriteRenderer> ().flipX = true;
 
-        }
-        else
-        {
-            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+		} else {
+			gameObject.GetComponent<SpriteRenderer> ().flipX = false;
 
-        }
-        //Original code
-        /*
-        var scale = transform.localScale;
-        scale.x = value;
-        transform.localScale = scale;
-        */
-    }
+		}
+	}
 
     void Move()
     {
@@ -135,7 +126,7 @@ public class PlayerController : MonoBehaviour
             GameObject trap = (GameObject)Instantiate(trapPrefab);
             trap.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Pickups/" + item.ToString());
             trap.GetComponent<TrapController>().SetType(item);
-            trap.transform.position = transform.position + transform.right * -2;
+			trap.transform.position = transform.position; //+ transform.right * -2;
 
             item = Items.None;
         }
