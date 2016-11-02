@@ -5,31 +5,47 @@ public class TrapController : MonoBehaviour
 {
     public Items item;
     public float speed = 4f;
-    
+	public float activationDelay = 0.1f;
+	bool isEnabled = false;
+	bool falling = true;
+
+
     void Update()
     {
-        if(item.ToString() == "Lager")
+        if(falling)
         {
             transform.Translate(Vector2.down * (speed * Time.deltaTime));
         }
+
+		if (!isEnabled) {
+			if (Time.time > activationDelay) {
+				isEnabled = true;
+			}
+		}
     }
     void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.gameObject.tag == "Player" && item.ToString() == "Butter")
-        {
-            collider.gameObject.GetComponent<PlayerController>().SetSlow();
-            Destroy(gameObject);
-        }
-        if(collider.gameObject.tag == "Player" && item.ToString() == "Lager")
-        {
-            collider.gameObject.GetComponent<PlayerController>().CanCrushed();
-            Destroy(gameObject);
-        }
+		if(isEnabled)
+		{
+			
+	        if (collider.gameObject.tag == "Player" && item.ToString() == "Butter")
+	        {
+	            collider.gameObject.GetComponent<PlayerController>().SetSlow();
+	            Destroy(gameObject);
+	        }
+	        if(collider.gameObject.tag == "Player" && item.ToString() == "Lager")
+	        {
+	            collider.gameObject.GetComponent<PlayerController>().CanCrushed();
+	            Destroy(gameObject);
+	        }
 
-        if(collider.gameObject.tag == "Platform" )
-        {
-            gameObject.GetComponent<Rigidbody2D>().gravityScale = 0;
-        }
+
+		}
+
+		if(collider.gameObject.tag == "Platform" && item.ToString() != "Lager" )
+		{
+			falling = false;
+		}
 
     }
 

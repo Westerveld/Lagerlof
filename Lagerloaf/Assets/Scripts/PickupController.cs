@@ -13,7 +13,6 @@ public class PickupController : MonoBehaviour
 {
     Items pickup;
 
-    public string texturesPath;
 
     public string Type
     {
@@ -30,7 +29,6 @@ public class PickupController : MonoBehaviour
 	void Start ()
     {
         pickup = (Items)Random.Range(0, (float)Items.Count);
-        GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>(texturesPath + "/" + Type);
 	}
 
     void OnTriggerEnter2D(Collider2D collision)
