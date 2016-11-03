@@ -15,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
     private bool slowed;
     private bool crushed;
-    private bool dead;
 
     public GameObject ParticleEffect;
 
@@ -38,6 +37,7 @@ public class PlayerController : MonoBehaviour
         UseItem();
         CheckIfFallenOffMap();
         WrapeMovement();
+        Taunt();
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -159,16 +159,10 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
-        if(!dead)
-        {
-            gameObject.GetComponent<SpriteRenderer>().enabled = false;
-            ParticleEffect.SetActive(true);
-            dead = true;
-            GameObject.Find("InputManager").GetComponent<InputManager>().AddNumberOfPlayer(-1);
-            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(this.gameObject.name);
-            Destroy(gameObject, 1f);
-            Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
-        }
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
+        ParticleEffect.SetActive(true);
+        Destroy(gameObject, 1f);
+        Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
     }
 
     void CheckIfFallenOffMap()
@@ -179,7 +173,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     void WrapeMovement()
     {
         if (transform.position.x > 17 || transform.position.x < -17)
@@ -188,4 +181,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Taunt()
+    {
+        if(Input.GetButtonDown(controller + "Taunt"))
+        {
+            anim.SetTrigger("Taunt");
+        }
+    }
 }
