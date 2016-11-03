@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour
         UseItem();
         CheckIfFallenOffMap();
         WrapeMovement();
+
+        GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(playerNumber);
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -175,7 +177,6 @@ public class PlayerController : MonoBehaviour
             ParticleEffect.SetActive(true);
             dead = true;
             GameObject.Find("InputManager").GetComponent<InputManager>().AddNumberOfPlayer(-1);
-            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(playerNumber);
             Destroy(gameObject, 1f);
             Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
         }
