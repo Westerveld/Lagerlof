@@ -208,7 +208,7 @@ public class PlayerController : MonoBehaviour
 
     void WrapeMovement()
     {
-        if (transform.position.x > 17 || transform.position.x < -17)
+        if (transform.position.x > 14.8 || transform.position.x < -14.8)
         {
             transform.position = new Vector3(transform.position.x * -1, transform.position.y, transform.position.z);
         }
