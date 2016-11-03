@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
         }
 
         //Create initial platforms
-        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length - 1)], new Vector3(0, platformHeight * level, 0), Quaternion.identity);
+        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length - 1)], new Vector3(0, 0, 0), Quaternion.identity);
 
     }
 

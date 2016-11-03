@@ -54,8 +54,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   platformPrefabs:
   - {fileID: 1000011682632192, guid: a2bbb4fdfbd78bf4089ecff24b7efe7f, type: 2}
-  collapsingWall: {fileID: 1000013009199450, guid: c83d9584507ebe547b50ce32af8ad6d2,
-    type: 2}
+  - {fileID: 1000011689355744, guid: 2faf342588fb12942a155bb1421d440f, type: 2}
+  - {fileID: 1000014149192958, guid: bce25353c5a4deb4190c7ad598edf5af, type: 2}
+  - {fileID: 1000012837088586, guid: a4989a1d4e5b3c544859ac1d4c9e2753, type: 2}
+  - {fileID: 1000010979969586, guid: f875ab7521e2c87499a29d8526f61641, type: 2}
+  - {fileID: 1000012195784822, guid: 3c7cf968bb286fa4d85fe4f893102fa0, type: 2}
   knifes: {fileID: 1000010469595248, guid: abfc8dd02f7014e48902cd518b976ba3, type: 2}
   Players:
   - {fileID: 0}
