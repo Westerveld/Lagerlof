@@ -16,7 +16,7 @@ public class PlayerController : MonoBehaviour
 
     private bool slowed;
     private bool crushed;
-    private bool dead;
+    public bool dead = true;
 
     public GameObject ParticleEffect;
 
@@ -34,6 +34,11 @@ public class PlayerController : MonoBehaviour
         ParticleEffect.SetActive(false);
     }
 
+    void Awake()
+    {
+        dead = false;
+    }
+
     void Update()
     {
         Move();
@@ -42,7 +47,7 @@ public class PlayerController : MonoBehaviour
         CheckIfFallenOffMap();
         WrapeMovement();
 
-        GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(playerNumber);
+       
     }
 
     void OnCollisionEnter2D(Collision2D other)
@@ -177,6 +182,7 @@ public class PlayerController : MonoBehaviour
             ParticleEffect.SetActive(true);
             dead = true;
             GameObject.Find("InputManager").GetComponent<InputManager>().AddNumberOfPlayer(-1);
+            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers();
             Destroy(gameObject, 1f);
             Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
         }

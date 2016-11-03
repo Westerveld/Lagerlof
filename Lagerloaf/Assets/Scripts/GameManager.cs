@@ -73,13 +73,18 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void CheckNumberOfPlayers(int player)
+    public void CheckNumberOfPlayers()
     {
         if (GameObject.Find("InputManager").GetComponent<InputManager>().GetNumberOfPlayers() == 1)
         {
-            StartCoroutine(loadGame(player));
-
-
+            foreach (var play in GameObject.FindGameObjectsWithTag("Player"))
+            {
+                if(!play.GetComponent<PlayerController>().dead)
+                {
+                    StartCoroutine(loadGame(play.GetComponent<PlayerController>().playerNumber));
+                }
+            }
+            
         }
     }
 

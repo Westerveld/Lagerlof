@@ -32,6 +32,7 @@ public class PickupController : MonoBehaviour
         pickup = (Items)Random.Range(0, (float)Items.Count);
 	}
 
+  
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "Player")

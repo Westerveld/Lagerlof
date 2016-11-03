@@ -26,11 +26,11 @@ GameObject:
   - 114: {fileID: 114000011107498746}
   m_Layer: 0
   m_Name: Player 4
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1000011818996888
 GameObject:
   m_ObjectHideFlags: 0
@@ -84,7 +84,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000011792166852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.18, y: -1.63, z: 0}
+  m_LocalPosition: {x: 1.95, y: 8.68, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -121,7 +121,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61000013623814090
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -170,6 +170,7 @@ MonoBehaviour:
   playerNumber: 4
   jumpReduction: 2
   anim: {fileID: 95000012854175708}
+  dead: 1
   ParticleEffect: {fileID: 1000011818996888}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
   item: 3
