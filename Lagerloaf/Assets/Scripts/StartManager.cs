@@ -9,6 +9,7 @@ public class StartManager : MonoBehaviour
 
     public Text playerText;
 
+    public GameObject playButton, infoButton, minusArrow, plusArrow, players, returnButton, controller, creditsButton, creditText;
 	// Use this for initialization
 	void Start ()
     {
@@ -24,6 +25,53 @@ public class StartManager : MonoBehaviour
     public void StartButton()
     {
         StartCoroutine(loadGame());
+    }
+
+    public void InfoButton()
+    {
+        playButton.SetActive(false);
+        infoButton.SetActive(false);
+        playerText.gameObject.SetActive(false);
+        minusArrow.SetActive(false);
+        plusArrow.SetActive(false);
+        players.SetActive(false);
+        creditsButton.SetActive(false);
+        returnButton.SetActive(true);
+        controller.SetActive(true);
+    }
+
+    public void ReturnButton()
+    {
+        playButton.SetActive(true);
+        infoButton.SetActive(true);
+        playerText.gameObject.SetActive(true);
+        minusArrow.SetActive(true);
+        plusArrow.SetActive(true);
+        players.SetActive(true);
+        creditsButton.SetActive(true);
+        returnButton.SetActive(false);
+        if (controller.activeInHierarchy)
+        {
+            controller.SetActive(false);
+        }
+        if (creditText.activeInHierarchy)
+        {
+            creditText.SetActive(false);
+        }
+        
+    }
+
+    public void CreditsButton()
+    {
+        playButton.SetActive(false);
+        infoButton.SetActive(false);
+        playerText.gameObject.SetActive(false);
+        minusArrow.SetActive(false);
+        plusArrow.SetActive(false);
+        players.SetActive(false);
+        creditsButton.SetActive(false);
+        returnButton.SetActive(true);
+        creditText.SetActive(true);
     }
 
     private IEnumerator loadGame()
