@@ -46,8 +46,17 @@ public class PlayerController : MonoBehaviour
         UseItem();
         CheckIfFallenOffMap();
         WrapeMovement();
+        Taunt();
+
 
        
+    }
+    void Taunt()
+    {
+        if(Input.GetButtonDown(controller+"Taunt"))
+        {
+            anim.SetTrigger("Taunt");
+        }
     }
 
     void OnCollisionEnter2D(Collision2D other)
