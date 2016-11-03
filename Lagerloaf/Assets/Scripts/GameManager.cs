@@ -73,24 +73,23 @@ public class GameManager : MonoBehaviour {
         }
     }
 
-    public void CheckNumberOfPlayers(string playerName)
+    public void CheckNumberOfPlayers(int player)
     {
         if (GameObject.Find("InputManager").GetComponent<InputManager>().GetNumberOfPlayers() == 1)
         {
-            print("LL1");
-            StartCoroutine(loadGame(playerName));
+            StartCoroutine(loadGame(player));
 
-            print("LL2");
+
         }
     }
 
-    private IEnumerator loadGame(string Winner)
+    private IEnumerator loadGame(int Winner)
     {
-        print("Load Level");
         float fadeTime = GameObject.Find("GameManager").GetComponent<MainFader>().BeginFade(1);
         yield return new WaitForSeconds(fadeTime);
+        GameObject.Find("InputManager").GetComponent<InputManager>().SetWinner(Winner);
         SceneManager.LoadScene("End");
-        print("load level end");
+       
     }
 
 }

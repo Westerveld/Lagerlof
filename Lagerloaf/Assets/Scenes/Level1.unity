@@ -4109,10 +4109,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 500
-  slowTime: 2
   controller: j4
+  playerNumber: 4
+  jumpReduction: 2
   anim: {fileID: 918027400}
-  slowed: 0
   ParticleEffect: {fileID: 691719708}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
   item: 3
@@ -4252,10 +4252,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 500
-  slowTime: 2
   controller: j2
+  playerNumber: 2
+  jumpReduction: 2
   anim: {fileID: 925284834}
-  slowed: 0
   ParticleEffect: {fileID: 321277571}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
   item: 3
@@ -6347,10 +6347,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 500
-  slowTime: 2
   controller: j3
+  playerNumber: 3
+  jumpReduction: 2
   anim: {fileID: 1401283548}
-  slowed: 0
   ParticleEffect: {fileID: 1652046019}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
   item: 3
@@ -6490,10 +6490,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   jumpForce: 500
-  slowTime: 2
   controller: j1
+  playerNumber: 1
+  jumpReduction: 2
   anim: {fileID: 1505691153}
-  slowed: 0
   ParticleEffect: {fileID: 942595705}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
   item: 3

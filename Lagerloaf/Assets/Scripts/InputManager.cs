@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class InputManager : MonoBehaviour {
-
+    public int winner = 0;
     private int numOfPlayers;
 	// Use this for initialization
 	void Start () {
@@ -14,6 +14,11 @@ public class InputManager : MonoBehaviour {
             }
         }
 
+    }
+
+    public void SetWinner(int win)
+    {
+        winner = win;
     }
 	
 	// Update is called once per frame

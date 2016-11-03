@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public float moveSpeed, jumpForce;
     public string controller;
+    public int playerNumber = 0;
 
     private Rigidbody2D rigidBody;
     private bool jumping;
@@ -21,6 +22,8 @@ public class PlayerController : MonoBehaviour
 
     public GameObject trapPrefab;
     public Items item = Items.None;
+
+   
 
     void Start()
     {
@@ -165,7 +168,7 @@ public class PlayerController : MonoBehaviour
             ParticleEffect.SetActive(true);
             dead = true;
             GameObject.Find("InputManager").GetComponent<InputManager>().AddNumberOfPlayer(-1);
-            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(this.gameObject.name);
+            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(playerNumber);
             Destroy(gameObject, 1f);
             Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
         }
