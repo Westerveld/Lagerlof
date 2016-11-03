@@ -3,24 +3,39 @@ using System.Collections;
 
 public class InputManager : MonoBehaviour {
 
-    private float numOfPlayers;
+    private int numOfPlayers;
 	// Use this for initialization
 	void Start () {
-        
-	}
+        if(GameObject.FindGameObjectsWithTag("IM").Length > 1)
+        {
+            for (int i = 1; i < GameObject.FindGameObjectsWithTag("IM").Length; i++)
+            {
+                Destroy(GameObject.FindGameObjectsWithTag("IM")[i]);
+            }
+        }
+
+    }
 	
 	// Update is called once per frame
 	void Awake () {
         DontDestroyOnLoad(this);
-	}
 
-    public void SetNumberOfPlayers(float value)
+    }
+
+    public void SetNumberOfPlayers(int value)
     {
         numOfPlayers = value;
     }
 
-    public float GetNumberOfPlayers()
+    public int GetNumberOfPlayers()
     {
+        print(numOfPlayers);
         return numOfPlayers;
     }
+
+    public void AddNumberOfPlayer(int value)
+    {
+        numOfPlayers += value;
+    }
+
 }

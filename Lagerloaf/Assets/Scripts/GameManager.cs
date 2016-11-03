@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -32,7 +33,7 @@ public class GameManager : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (Camera.main.transform.position.y >= level*platformHeight)
+        if (Camera.main.transform.position.y >= level * platformHeight)
         {
             level++;
             gameSpeed += gameSpeedIncreament;
@@ -72,5 +73,24 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void CheckNumberOfPlayers(string playerName)
+    {
+        if (GameObject.Find("InputManager").GetComponent<InputManager>().GetNumberOfPlayers() == 1)
+        {
+            print("LL1");
+            StartCoroutine(loadGame(playerName));
+
+            print("LL2");
+        }
+    }
+
+    private IEnumerator loadGame(string Winner)
+    {
+        print("Load Level");
+        float fadeTime = GameObject.Find("GameManager").GetComponent<MainFader>().BeginFade(1);
+        yield return new WaitForSeconds(fadeTime);
+        SceneManager.LoadScene("End");
+        print("load level end");
+    }
 
 }

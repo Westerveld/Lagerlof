@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private bool slowed;
     private bool crushed;
+    private bool dead;
 
     public GameObject ParticleEffect;
 
@@ -158,10 +159,16 @@ public class PlayerController : MonoBehaviour
 
     public void Death()
     {
-        gameObject.GetComponent<SpriteRenderer>().enabled = false;
-        ParticleEffect.SetActive(true);
-        Destroy(gameObject, 1f);
-        Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
+        if(!dead)
+        {
+            gameObject.GetComponent<SpriteRenderer>().enabled = false;
+            ParticleEffect.SetActive(true);
+            dead = true;
+            GameObject.Find("InputManager").GetComponent<InputManager>().AddNumberOfPlayer(-1);
+            GameObject.Find("GameManager").GetComponent<GameManager>().CheckNumberOfPlayers(this.gameObject.name);
+            Destroy(gameObject, 1f);
+            Debug.Log(Time.time + " | Player - " + this.gameObject.name + "has DIED | PlayerController.Death()");
+        }
     }
 
     void CheckIfFallenOffMap()
