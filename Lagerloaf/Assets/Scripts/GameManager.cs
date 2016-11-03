@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour {
     // Use this for initialization
     void Start () {
         List<GameObject> spawnedPlatforms = new List<GameObject>();
-      
+        gameSpeed = 1f;
         numOfPlayers = GameObject.Find("InputManager").GetComponent<InputManager>().GetNumberOfPlayers();
 
         for (int i = 0; i < numOfPlayers; i++)
@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour {
         }
 
         //Create initial platforms
-        Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length - 1)], new Vector3(0, 0, 0), Quaternion.identity);
+     //   Instantiate(platformPrefabs[Random.Range(0, platformPrefabs.Length - 1)], new Vector3(0, 0, 0), Quaternion.identity);
 
     }
 

@@ -327,7 +327,7 @@ MonoBehaviour:
   dead: 1
   ParticleEffect: {fileID: 1000011818996888}
   trapPrefab: {fileID: 1000011359468900, guid: 4e27b60a1f765dd4f99e53f616814772, type: 2}
-  item: 3
+  item: 4
 --- !u!114 &114000011580353546
 MonoBehaviour:
   m_ObjectHideFlags: 1

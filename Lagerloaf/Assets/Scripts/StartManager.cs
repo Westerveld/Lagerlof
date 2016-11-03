@@ -9,7 +9,7 @@ public class StartManager : MonoBehaviour
 
     public Text playerText;
 
-    public GameObject playButton, infoButton, minusArrow, plusArrow, players, returnButton, controller, creditsButton, creditText;
+    public GameObject playButton, infoButton, minusArrow, plusArrow, players, returnButton, controller, creditsButton, creditText, quitButton;
 	// Use this for initialization
 	void Start ()
     {
@@ -36,6 +36,7 @@ public class StartManager : MonoBehaviour
         plusArrow.SetActive(false);
         players.SetActive(false);
         creditsButton.SetActive(false);
+        quitButton.SetActive(false);
         returnButton.SetActive(true);
         controller.SetActive(true);
     }
@@ -49,6 +50,7 @@ public class StartManager : MonoBehaviour
         plusArrow.SetActive(true);
         players.SetActive(true);
         creditsButton.SetActive(true);
+        quitButton.SetActive(true);
         returnButton.SetActive(false);
         if (controller.activeInHierarchy)
         {
@@ -70,6 +72,7 @@ public class StartManager : MonoBehaviour
         plusArrow.SetActive(false);
         players.SetActive(false);
         creditsButton.SetActive(false);
+        quitButton.SetActive(false);
         returnButton.SetActive(true);
         creditText.SetActive(true);
     }
@@ -82,6 +85,10 @@ public class StartManager : MonoBehaviour
         SceneManager.LoadScene("Level1");
     }
 
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
     public void AddPlayer()
     {
         if(numOfPlayers < 4)
