@@ -28,12 +28,12 @@ public class TrapController : MonoBehaviour
 		if(isEnabled)
 		{
 			
-	        if (collider.gameObject.tag == "Player" && item.ToString() == "Butter")
+	        if (collider.gameObject.tag == "Player" && item == Items.Butter)
 	        {
 	            collider.gameObject.GetComponent<PlayerController>().SetSlow();
 	            Destroy(gameObject);
 	        }
-	        if(collider.gameObject.tag == "Player" && item.ToString() == "Lager")
+	        if(collider.gameObject.tag == "Player" && item == Items.Lager)
 	        {
 	            collider.gameObject.GetComponent<PlayerController>().CanCrushed();
 	            Destroy(gameObject);
@@ -42,7 +42,7 @@ public class TrapController : MonoBehaviour
 
 		}
 
-		if(collider.gameObject.tag == "Platform" && item.ToString() != "Lager" )
+		if(collider.gameObject.tag == "Platform" && item != Items.Lager)
 		{
 			falling = false;
 		}

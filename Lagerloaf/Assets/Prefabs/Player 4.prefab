@@ -167,6 +167,7 @@ MonoBehaviour:
   moveSpeed: 5
   jumpForce: 500
   controller: j4
+  playerNumber: 4
   jumpReduction: 2
   anim: {fileID: 95000012854175708}
   ParticleEffect: {fileID: 1000011818996888}
