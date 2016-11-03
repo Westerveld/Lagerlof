@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class StartManager : MonoBehaviour
 {
-    private float numOfPlayers = 2;
+    private int numOfPlayers = 2;
 
     public Text playerText;
 
