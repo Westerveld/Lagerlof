@@ -125,12 +125,19 @@ public class PlayerController : MonoBehaviour
     {
         if(Input.GetButtonDown(controller + "Use") && item != Items.None)
         {
-            anim.SetTrigger("UsedItem");
+            if (item == Items.Can)
+            {
+                transform.FindChild("CanBurst").gameObject.SetActive(true);
+            }
+            else
+            {
+                anim.SetTrigger("UsedItem");
 
-            GameObject trap = (GameObject)Instantiate(trapPrefab);
-            trap.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Pickups/" + item.ToString());
-            trap.GetComponent<TrapController>().SetType(item);
-			trap.transform.position = transform.position; //+ transform.right * -2;
+                GameObject trap = (GameObject)Instantiate(trapPrefab);
+                trap.GetComponent<SpriteRenderer>().sprite = Resources.Load<Sprite>("Sprites/Pickups/" + item.ToString());
+                trap.GetComponent<TrapController>().SetType(item);
+                trap.transform.position = transform.position;
+            }
 
             item = Items.None;
         }

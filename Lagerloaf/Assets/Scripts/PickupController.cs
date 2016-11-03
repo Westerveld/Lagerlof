@@ -5,6 +5,7 @@ public enum Items
 {
     Butter,
     Lager,
+    Can,
     Count,
     None
 }
