@@ -6,7 +6,7 @@ public class InputManager : MonoBehaviour {
     private int numOfPlayers;
 	// Use this for initialization
 	void Start () {
-        if(GameObject.FindGameObjectsWithTag("IM").Length > 1)
+        if(GameObject.FindGameObjectsWithTag("IM").Length > 1) //Stops more than one InputManager being active.
         {
             for (int i = 1; i < GameObject.FindGameObjectsWithTag("IM").Length; i++)
             {
@@ -23,8 +23,7 @@ public class InputManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Awake () {
-        DontDestroyOnLoad(this);
-
+        DontDestroyOnLoad(this); //Prevents the script getting destroyed, allowing use to pass information through scenes.
     }
 
     public void SetNumberOfPlayers(int value)

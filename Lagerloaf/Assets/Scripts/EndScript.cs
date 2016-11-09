@@ -10,6 +10,8 @@ public class EndScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         print(GameObject.Find("InputManager").GetComponent<InputManager>().winner);
+
+        //Loads the scene for the player that won.
         switch (GameObject.Find("InputManager").GetComponent<InputManager>().winner)
         {
             case 1:

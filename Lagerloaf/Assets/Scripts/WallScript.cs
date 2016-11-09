@@ -23,14 +23,13 @@ public class WallScript : MonoBehaviour
             pos.x = -startX;
             trans.position = pos;
         }
-        // startTime += Time.time ;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector2 pos = trans.position;
-        //  if (startTime + collapseTime < Time.time)
+        //Checks to see if the walls are at the cameras y location, if so it will start to move towards the center.
         if (gameObject.transform.position.y + 3 < Camera.main.transform.position.y)
         {
             if (moveLeft && pos.x > 11f)
@@ -61,19 +60,21 @@ public class WallScript : MonoBehaviour
                 }
             }
         }
-        if (!moving)
+        if (!moving) //Sets off the particle effect once the walls has completed its movement
         {
             pEffect.SetActive(true);
         }
     }
     void OnCollisionEnter2D(Collision2D other)
     {
+        //Walls can kill the player
         if (other.gameObject.tag == "Player")
         {
             other.gameObject.GetComponent<PlayerController>().Death();
         }
     }
 
+    //This function is used to keep up with the game time from the GameManager script. It allows the walls to progressively move in quicker
     public void ChangeValues(float newXSlow, float newXFast)
     {
         slowMoveX = newXSlow;

@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour {
         {
             level++;
             gameSpeed += gameSpeedIncreament;
-            Debug.Log(Time.time + " | GameSpeed = " + gameSpeed + " | GameManger.Update()");
+            //Debug.Log(Time.time + " | GameSpeed = " + gameSpeed + " | GameManger.Update()");
             SpawnNewLevel();
             CleanPlatforms();
         }
@@ -50,9 +50,8 @@ public class GameManager : MonoBehaviour {
         GameObject go = (GameObject)Instantiate(knifes, new Vector3(0, platformHeight * level  +5, 0), Quaternion.identity);
         WallScript wall1 = go.transform.GetChild(0).gameObject.GetComponent<WallScript>();
         WallScript wall2 = go.transform.GetChild(1).gameObject.GetComponent<WallScript>();
-        wall1.ChangeValues((gameSpeed *0.1f), (gameSpeed * 0.5f));
-        wall2.ChangeValues((gameSpeed * 0.1f), (gameSpeed * 0.5f));
-        
+        wall1.ChangeValues((gameSpeed *0.1f), (gameSpeed * 0.5f)); //Sets up the values for the wall script to move in accordance with the game
+        wall2.ChangeValues((gameSpeed * 0.1f), (gameSpeed * 0.5f)); //Sets up the values for the wall script to move in accordance with the game
     }
 
     void CleanPlatforms()
@@ -61,14 +60,14 @@ public class GameManager : MonoBehaviour {
         {
             if (go.transform.position.y < Camera.main.transform.position.y - platformHeight)
             {
-                Destroy(go);
+                Destroy(go); //Removes platforms that are off the screen
             }
         }
         foreach(var go in GameObject.FindGameObjectsWithTag("Edge"))
         {
             if (go.transform.position.y < Camera.main.transform.position.y - platformHeight)
             {
-                Destroy(go);
+                Destroy(go); //Removes knives that are off the screen
             }
         }
     }
@@ -81,13 +80,14 @@ public class GameManager : MonoBehaviour {
             {
                 if(!play.GetComponent<PlayerController>().dead)
                 {
-                    StartCoroutine(loadGame(play.GetComponent<PlayerController>().playerNumber));
+                    StartCoroutine(loadGame(play.GetComponent<PlayerController>().playerNumber)); 
                 }
             }
             
         }
     }
 
+    //Takes an int input to pass the winner onto the Input Manager
     private IEnumerator loadGame(int Winner)
     {
         float fadeTime = GameObject.Find("GameManager").GetComponent<MainFader>().BeginFade(1);

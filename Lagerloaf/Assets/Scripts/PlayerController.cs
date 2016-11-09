@@ -4,7 +4,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public float moveSpeed, jumpForce;
-    public string controller;
+    public string controller; //This is to allow different player controlled objects to use the same script
     public int playerNumber = 0;
 
     private Rigidbody2D rigidBody;
@@ -45,39 +45,12 @@ public class PlayerController : MonoBehaviour
         Jump();
         UseItem();
         CheckIfFallenOffMap();
-        WrapeMovement();
+        WrapMovement();
         Taunt();
 
 
        
     }
-    void Taunt()
-    {
-        if(Input.GetButtonDown(controller+"Taunt"))
-        {
-            anim.SetTrigger("Taunt");
-        }
-    }
-
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.contacts.Length > 0 && other.contacts[0].normal == Vector2.up && other.gameObject.tag == "Platform")
-        {
-            jumping = false;
-            anim.SetBool("InAir", false);
-        }
-    }
-
-    void ChangeScale(bool value)
-	{
-		if (value) {
-			gameObject.GetComponent<SpriteRenderer> ().flipX = true;
-
-		} else {
-			gameObject.GetComponent<SpriteRenderer> ().flipX = false;
-
-		}
-	}
 
     void Move()
     {
@@ -159,6 +132,37 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    void Taunt()
+    {
+        if (Input.GetButtonDown(controller + "Taunt"))
+        {
+            anim.SetTrigger("Taunt");
+        }
+    }
+
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.contacts.Length > 0 && other.contacts[0].normal == Vector2.up && other.gameObject.tag == "Platform")
+        {
+            jumping = false;
+            anim.SetBool("InAir", false);
+        }
+    }
+
+    void ChangeScale(bool value)
+    {
+        if (value)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
+
+        }
+        else
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        }
+    }
+
     public void SetSlow()
     {
         slowed = true;
@@ -206,7 +210,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    void WrapeMovement()
+    void WrapMovement()
     {
         if (transform.position.x > 14.8 || transform.position.x < -14.8)
         {
